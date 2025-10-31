@@ -1,11 +1,3 @@
-echo "# FES-Mod2-Final" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/nicolew4367/FES-Mod2-Final.git
-git push -u origin main
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +13,7 @@ git push -u origin main
 
     <section id="landing">
         <nav>
-            <div class="row">
+            <div class="row nav__row">
                 <div class="nav__logo">
                     <img src="Treact.logo.svg" alt="Treactlogo">
                     <div class="nav__logo--title">Treact</div>
@@ -36,8 +28,31 @@ git push -u origin main
                 </div>
             </div>
         </nav>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="header__box">
+                        <div class="row header__row">
+                            <h1> Beautiful React Templates <span class="color">for you</span></h1>
+                            <p class="header__para"> Our templates are easy to set up, understand and customize. Fully
+                                modular componenets with a variety
+                                of pages and components</p>
+                            <div class="header__email">
+                                <form for="email"></form>
+                                <input type="text" class="header__email--input" placeholder="Your Email Address">
+                                <button class="header__btn">Get Started!</button>
+                                <p class="header__para--trusted"><span class="gray">Our Trusted Customers</span></p>
+                                <img src="customer-logo-strip.png" alt="customer-logo-strip">
+                            </div>
+                            <div class="header__logo">
+                                <img src="design1.svg" alt="header-picture">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
     </section>
-
 </body>
 
 </html>
