@@ -23,6 +23,20 @@ html {
     align-items: center;
 }
 
+h1 {
+    font-size: 30px;
+    padding: 12px;
+}
+
+button {
+   border: none;
+   cursor: pointer; 
+}
+
+p {
+    padding-left: 24px;
+}
+
 
 /*
 
@@ -93,51 +107,68 @@ HEADER
 }
 
 .header__box {
-    display: flex;
+    width: 100%;
 }
 
 .header__row {
     flex-direction: column;
-    max-width: 600px;
     margin: 0;
     padding: 0 12px;
+    flex-wrap: wrap;
+}
+
+.header__top {
+    width: 2000px;
+    padding-left: 24px;
+    display: flex;
 }
 
 .header__logo {
     display: flex;
     justify-content: flex-end;
-    padding: 12px; 
-    max-width: 500px;
-    max-height: 500px;
+    align-items: center;
 }
 
-h1 {
-    font-size: 30px;
-    padding: 12px;
+.design__1 {
+    height: 500px;
+    width: 450px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header__para {
-    max-width: 600px;
-    padding: 12px 12px;
+    max-width: 450px;
+    padding: 8px 24px;
 }
 
 .header__email {
+    padding: 16px;
+    border: none;
+    margin: none;
     display: flex;
 }
 
 .header__email--input {
-    max-width: 200px;
+    width: 300px;
     margin-left: 12px;
+    margin-right: 12px;
+    height: 50px;
 }
 
 .header__btn {
     max-width: 120px;
+    height: 50px;
 }
 
 .header__para--trusted {
     color: #a0aca0;
     display: flex;
-    align-items: flex-end;
-    
+    flex-direction: column; 
+}
+
+.header__strip {
+    width: 400px;
+    height: 50px;
+    padding-left: 24px;
 }
 
