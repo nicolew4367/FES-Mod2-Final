@@ -24,7 +24,7 @@ html {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 36px;
     padding: 12px;
 }
 
@@ -35,6 +35,11 @@ button {
 
 p {
     padding-left: 24px;
+}
+
+.container {
+    display: flex;
+    height: 100%;
 }
 
 
@@ -67,7 +72,7 @@ img {
 }
 
 .nav__logo {
-    margin-left: 12px;
+    padding-left: 24px;
     display: flex;
     align-items: center;
     max-width: 120px;
@@ -76,7 +81,8 @@ img {
 .nav__logo--title {
     display: block;
     font-weight: bold;
-    margin: 12px;
+    font-size: 26px;
+    padding: 12px;
 }
 
 button {
@@ -100,42 +106,46 @@ HEADER
 
 */
 
-.container {
+
+.header__row {
     display: flex;
-    height: 100%;
+    align-items: center;    
+    justify-content: space-between;
+    gap: 32px;
+    flex: 1 1 0;
 }
 
 .header__box {
    display: flex;
-   justify-content: space-between;
+   justify-content: flex-start;
    flex-direction: column;
 }
 
 .header__description {
     margin: 0;
-    padding: 0 23px;
+    padding: 24px 24px;
 }
 
 .header__para {
     max-width: 450px;
-    padding: 8px 24px;
+    padding: 24px;
 }
 
 .header__email {
-    padding: 16px;
-    border: none;
+    padding: 24px;
     margin: none;
     display: flex;
 }
 
 .header__email--input {
-    width: 300px;
-    margin-left: 12px;
-    margin-right: 12px;
-    height: 50px;
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid #a0aca0;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.header__btn {
+.header__email--btn {
     max-width: 120px;
     height: 50px;
 }
@@ -144,10 +154,7 @@ HEADER
     color: #a0aca0;
     display: flex;
     flex-direction: column; 
-}
-
-.header__color {
-    padding-left: 100px;
+    padding-top: 54px;
 }
 
 .header__logo--container {
@@ -156,8 +163,10 @@ HEADER
 }
 
 .design__1 {
-    height: 500px;
-    width: 450px;
+    height: auto;
+    width: 480px;
+    padding: 0 24px;
+    max-width: 100%;
 }
 
 .header__strip {
