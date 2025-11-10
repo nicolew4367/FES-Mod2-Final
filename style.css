@@ -218,28 +218,38 @@ FEATURES
 }
 
 .feaure__row {
-    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    padding: 32px 8px;
+    margin: 0 16px;
 }
 
 .feature__img--wrapper {
     display: flex;
     border-radius: 500px;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid grey;
-    max-width: fit-content;
+    max-width: 15%;
+}
+
+.feature__img {
+    display: flex;
+    justify-content: center;
+    max-width: 75%;
+    padding-left: 8px;
 }
 
 .feature__text {
-   max-width: calc(50%);
-   flex-wrap: wrap;
-}
-
-.feature__title {
-
-}
-
-.feature__para {
   
 }
+
+.feature__title,
+.feature__para {
+
+}
+
+
+
+
 
 
