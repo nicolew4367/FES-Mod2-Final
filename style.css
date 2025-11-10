@@ -30,11 +30,7 @@ h1 {
 
 button {
    border: none;
-   cursor: pointer; 
-}
-
-p {
-    padding-left: 24px;
+   cursor: pointer;
 }
 
 .container {
@@ -157,6 +153,10 @@ HEADER
     padding-top: 54px;
 }
 
+.header__trusted {
+    padding-left: 24px;
+}
+
 .header__logo--container {
     display: flex;
     justify-content: flex-end;
@@ -195,7 +195,7 @@ FEATURES
     font-weight: 700;
     text-transform: uppercase;
     color: #6415ff;
-    padding: 34px;
+    padding-top: 100px;
 }
 
 .feature__description {
@@ -207,20 +207,25 @@ FEATURES
     text-align: center;
     display: flex;
     justify-content: center;
+    font-size: 18px;
     padding-bottom: 34px;
 }
 
 .features {
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex: calc(33.3%);
+    padding-left: 100px;
+    padding-top: 26px;
 }
 
 .feaure__row {
-    display: flex;
-    padding: 32px 8px;
-    margin: 0 16px;
+   display: flex;
+   align-items: center;
+   padding: 32px 8px;
+   margin: 0 16px;
 }
 
 .feature__img--wrapper {
@@ -232,26 +237,74 @@ FEATURES
 }
 
 .feature__img {
-    display: flex;
-    justify-content: center;
     max-width: 75%;
     padding-left: 8px;
 }
 
-.feature__text {
-   display: flex;
-   justify-content: flex-start;
-   flex-direction: column;
-   margin: 8px 0 0 16px;
-   max-width: 50%;
+.feature__text { 
+    margin: 8px 0 0 16px;
+    max-width: 50%;
 }
 
 .feature__title {
-
 }
 
 .feature__para {
 
+}
+
+/*
+
+QUALTIY
+
+*/
+
+#quality {
+    margin-top: 100px;
+}
+
+.quality__row {
+    flex-wrap: wrap;
+}
+
+.quality__box {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+}
+
+.quality__header {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #6415ff;
+    padding-top: 100px;
+}
+
+.quality__description {
+    font-size: 62px;
+    max-width: 500px;
+}
+
+.quality__para {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.quality__btn {
+    max-width: 120px;
+}
+
+.quality__pic--container {
+    display: flex;
+    justify-content: center;
+}
+
+.design__2 {
+    height: 300px;
+    width: 480px;
+    padding: 0 24px;
+    max-width: 100%;
 }
 
 
